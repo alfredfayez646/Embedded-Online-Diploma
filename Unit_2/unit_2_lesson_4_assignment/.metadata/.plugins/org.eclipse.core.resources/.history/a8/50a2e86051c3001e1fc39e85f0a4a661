@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 2, 2024
+ *      Author: Alfred
+ */
+
+#include "stdio.h"
+
+void main() {
+	 char y = '\0';
+	printf("%d", y);
+	return 0;
+}

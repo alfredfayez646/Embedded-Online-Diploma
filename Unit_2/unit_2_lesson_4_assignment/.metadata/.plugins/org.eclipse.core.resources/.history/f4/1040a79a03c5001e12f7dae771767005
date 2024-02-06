@@ -1,0 +1,49 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 2, 2024
+ *      Author: Alfred
+ */
+
+#include "stdio.h"
+
+void matrix_sum();
+
+int x[2][2];
+int y[2][2];
+
+void main() {
+	int i, j;
+	printf("enter the elements of the 1st matrix");
+	for (i=0;i<2;i++){
+		for(j=0;j<0;j++){
+			printf("enter a%d%d \n",i+1,j+1);
+			scanf("%d\n",x[i][j]);
+		}
+	}
+	printf("enter the elements of the 2nd matrix");
+	for (i=0;i<2;i++){
+		for(j=0;j<0;j++){
+			printf("enter b%d%d \n",i+1,j+1);
+			scanf("%d\n",y[i][j]);
+		}
+	}
+	matrix_sum();
+	printf("the summation of the 2 matrices is :\n");
+	for (i=0;i<2;i++){
+		for(j=0;j<0;j++){
+			printf("enter a%d%d",i+1,j+1);
+			scanf("%d",x[i][j]);
+		}
+	}
+	return 0;
+}
+void matrix_sum(){ 	// summation of the 2 matrices
+	int i,j;
+	for (i=0;i<2;i++){
+		for(j=0;j<0;j++){
+			x[i][j] += y[i][j];
+		}
+	}
+	return 0;
+}

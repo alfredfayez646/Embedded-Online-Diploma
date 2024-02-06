@@ -1,0 +1,14 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 2, 2024
+ *      Author: Alfred
+ */
+
+#include "stdio.h"
+
+void main() {
+	unsigned int y = -255;
+	printf("%d", y);
+	return 0;
+}

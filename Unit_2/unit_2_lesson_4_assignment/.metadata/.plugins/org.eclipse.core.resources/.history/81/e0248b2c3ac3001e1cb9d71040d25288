@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Feb 2, 2024
+ *      Author: Alfred
+ */
+
+#include "stdio.h"
+
+void main() {
+	unsigned int y = -10
+
+			;
+	printf("%u", y);
+	return 0;
+}
