@@ -1,0 +1,9 @@
+Toggle_LED.o:
+00000000 T main
+00000000 D R_ODR
+
+Toggle_LED.elf:
+08000050 t _reset
+08000058 T main
+080000d4 D R_ODR
+08000056 t Vector_handler
