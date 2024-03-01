@@ -1,0 +1,222 @@
+
+alarm_monitor.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000090  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000c4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000c4  2**0
+                  ALLOC
+  3 .debug_info   00000a22  00000000  00000000  000000c4  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 000001e1  00000000  00000000  00000ae6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    000000e0  00000000  00000000  00000cc7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000da7  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   00000200  00000000  00000000  00000dc7  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    0000059e  00000000  00000000  00000fc7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  00001565  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  00000088  00000000  00000000  000015e4  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  0000166c  2**0
+                  CONTENTS, READONLY
+
+AlarmActuator.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000ac  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000e0  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000e0  2**0
+                  ALLOC
+  3 .debug_info   00000a4b  00000000  00000000  000000e0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 000001df  00000000  00000000  00000b2b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    00000168  00000000  00000000  00000d0a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000e72  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   00000201  00000000  00000000  00000e92  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    000005e2  00000000  00000000  00001093  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  00001675  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  000000c8  00000000  00000000  000016f4  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  000017bc  2**0
+                  CONTENTS, READONLY
+
+driver.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000c4  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000f8  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000f8  2**0
+                  ALLOC
+  3 .debug_info   00000a05  00000000  00000000  000000f8  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 000001de  00000000  00000000  00000afd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    00000140  00000000  00000000  00000cdb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000e1b  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   000002ca  00000000  00000000  00000e3b  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    00000563  00000000  00000000  00001105  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  00001668  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  000000a0  00000000  00000000  000016e4  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  00001784  2**0
+                  CONTENTS, READONLY
+
+main.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000080  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000b4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000b4  2**0
+                  ALLOC
+  3 .debug_info   00000a9a  00000000  00000000  000000b4  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 000001d6  00000000  00000000  00000b4e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    00000058  00000000  00000000  00000d24  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000d7c  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   00000238  00000000  00000000  00000d9c  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    00000627  00000000  00000000  00000fd4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  000015fb  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  00000048  00000000  00000000  00001678  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  000016c0  2**0
+                  CONTENTS, READONLY
+
+MainAlgo.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000058  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000004  00000000  00000000  0000008c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00000000  00000000  00000090  2**2
+                  ALLOC
+  3 .debug_info   00000a62  00000000  00000000  00000090  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 0000020e  00000000  00000000  00000af2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    00000088  00000000  00000000  00000d00  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000d88  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   000002d8  00000000  00000000  00000da8  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    0000058e  00000000  00000000  00001080  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  0000160e  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  00000054  00000000  00000000  0000168c  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  000016e0  2**0
+                  CONTENTS, READONLY
+
+Psensor.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000080  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000b4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00000000  00000000  000000b4  2**2
+                  ALLOC
+  3 .debug_info   00000a4e  00000000  00000000  000000b4  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  4 .debug_abbrev 0000020a  00000000  00000000  00000b02  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_loc    0000009c  00000000  00000000  00000d0c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_aranges 00000020  00000000  00000000  00000da8  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  7 .debug_line   000002db  00000000  00000000  00000dc8  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_str    00000581  00000000  00000000  000010a3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .comment      0000007c  00000000  00000000  00001624  2**0
+                  CONTENTS, READONLY
+ 10 .debug_frame  00000068  00000000  00000000  000016a0  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .ARM.attributes 00000033  00000000  00000000  00001708  2**0
+                  CONTENTS, READONLY
+
+startup.o:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000090  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  000000c4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000000  00000000  00000000  000000c4  2**0
+                  ALLOC
+  3 .vectors      0000001c  00000000  00000000  000000c4  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, DATA
+  4 .debug_info   000001c3  00000000  00000000  000000e0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  5 .debug_abbrev 000000d6  00000000  00000000  000002a3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_loc    0000007c  00000000  00000000  00000379  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_aranges 00000020  00000000  00000000  000003f5  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_line   00000207  00000000  00000000  00000415  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  9 .debug_str    000001cd  00000000  00000000  0000061c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .comment      0000007c  00000000  00000000  000007e9  2**0
+                  CONTENTS, READONLY
+ 11 .debug_frame  00000050  00000000  00000000  00000868  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 12 .ARM.attributes 00000033  00000000  00000000  000008b8  2**0
+                  CONTENTS, READONLY
+
+HighPessureDetection.elf:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000404  08000000  08000000  00010000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  20000000  08000404  00020000  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .debug        00006da4  00000000  00000000  00020004  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .comment      0000007b  00000000  00000000  00026da8  2**0
+                  CONTENTS, READONLY
+  4 .ARM.attributes 00000033  00000000  00000000  00026e23  2**0
+                  CONTENTS, READONLY
+  5 .bss          00001024  20000004  20000004  00020004  2**2
+                  ALLOC

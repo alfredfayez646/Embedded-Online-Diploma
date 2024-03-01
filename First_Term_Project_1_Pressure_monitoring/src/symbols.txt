@@ -1,0 +1,132 @@
+
+alarm_monitor.o:
+00000004 C alarm_monitor_state
+00000001 C alarm_monitor_state_id
+         U Delay
+00000000 T highPressure
+00000070 T ST_alarmMonitorWaiting
+0000004c T ST_alarmOFF
+0000001c T ST_alarmOn
+         U startAlarm
+         U stopAlarm
+
+AlarmActuator.o:
+00000000 T alarm_actuator_init
+00000004 C alarm_actuator_state
+00000001 C alarm_actuator_state_id
+         U Set_Alarm_actuator
+0000005c T ST_alarm_actuator_waiting
+0000000c T ST_alarmActuatorOff
+00000034 T ST_alarmActuatorOn
+00000074 T startAlarm
+00000090 T stopAlarm
+
+driver.o:
+00000000 T Delay
+00000020 T getPressureVal
+00000074 T GPIO_INITIALIZATION
+00000038 T Set_Alarm_actuator
+
+main.o:
+         U alarm_actuator_init
+         U alarm_actuator_state
+00000001 C alarm_actuator_state_id
+         U alarm_monitor_state
+00000001 C alarm_monitor_state_id
+         U GPIO_INITIALIZATION
+0000004c T main
+         U MainAlgo_state
+00000001 C MainAlgo_state_id
+         U PS_init
+         U Psensor_state
+00000001 C Psensor_state_id
+00000000 T setup
+         U ST_alarm_actuator_waiting
+         U ST_alarmOFF
+         U ST_PSreading
+         U ST_waitingPVal
+
+MainAlgo.o:
+         U highPressure
+00000000 B MA_PVal
+00000004 C MainAlgo_state
+00000001 C MainAlgo_state_id
+00000000 T setP
+00000020 T ST_waitingPVal
+00000000 D threshold
+
+Psensor.o:
+         U Delay
+         U getPressureVal
+00000000 T PS_init
+00000004 C Psensor_state
+00000001 C Psensor_state_id
+00000000 B PVal
+         U setP
+00000058 T ST_PSidle
+0000001c T ST_PSreading
+
+startup.o:
+         U _E_bss
+         U _E_DATA
+         U _E_txt
+         U _S_bss
+         U _S_DATA
+00000000 W Bus_fault
+00000000 T Default_Handler
+00000000 R g_p_fn_vectors
+00000000 W H_fault_Handler
+         U main
+00000000 W MM_fault_Handler
+00000000 W NMI_Handler
+0000000c T Reset_Handler
+00000000 b stack_top
+00000000 W Usage_fault_Handler
+
+HighPessureDetection.elf:
+2000040c B _E_bss
+20000004 D _E_DATA
+08000418 R _E_txt
+20000004 B _S_bss
+20000000 D _S_DATA
+08000094 T alarm_actuator_init
+20000418 B alarm_actuator_state
+20000414 B alarm_actuator_state_id
+2000040c B alarm_monitor_state
+20000410 B alarm_monitor_state_id
+08000360 W Bus_fault
+08000360 T Default_Handler
+08000140 T Delay
+080003fc R g_p_fn_vectors
+08000160 T getPressureVal
+080001b4 T GPIO_INITIALIZATION
+08000360 W H_fault_Handler
+08000000 T highPressure
+20000004 B MA_PVal
+08000250 T main
+20000420 B MainAlgo_state
+2000041c B MainAlgo_state_id
+08000360 W MM_fault_Handler
+08000360 W NMI_Handler
+080002dc T PS_init
+20000424 B Psensor_state
+2000041d B Psensor_state_id
+20000008 B PVal
+0800036c T Reset_Handler
+08000178 T Set_Alarm_actuator
+08000284 T setP
+08000204 T setup
+080000f0 T ST_alarm_actuator_waiting
+080000a0 T ST_alarmActuatorOff
+080000c8 T ST_alarmActuatorOn
+08000070 T ST_alarmMonitorWaiting
+0800004c T ST_alarmOFF
+0800001c T ST_alarmOn
+08000334 T ST_PSidle
+080002f8 T ST_PSreading
+080002a4 T ST_waitingPVal
+2000000c b stack_top
+08000108 T startAlarm
+08000124 T stopAlarm
+20000000 D threshold
+08000360 W Usage_fault_Handler
